@@ -1,5 +1,19 @@
 # Botc_townsquare
 
+### TODO
+1. Setup WS for Vuex. Vuex handles and stores state across all components.
+2. Figure out what components we need for grim stuff
+    1. Should be base 3 scripts.
+    2. All roles for those 3. 
+    3. Player array and initialized state(potentially with ways of changing said state).
+    4. Host stuff(Host/player/spectator)
+
+I'm sure we'll figure this out.
+
+
+
+
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
