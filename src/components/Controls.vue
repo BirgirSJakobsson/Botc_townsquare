@@ -1,8 +1,7 @@
 <template>
-<H2>Navbar</H2>
-<div>
-
-</div>
+    <div>
+        <h2>Controls</h2>
+    </div>
 </template>
 <script>
 export default{
