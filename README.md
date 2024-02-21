@@ -10,7 +10,34 @@
 
 I'm sure we'll figure this out.
 
+## Features we want
+- Text chat.
+    - Between ST and players.
+    - Not between players
 
+- Voice chat
+    - Voice channels between players
+    - Voice channel between ST/player for consult.
+    - Nomination phase, adressing overtalking.
+
+- ST powers
+    - Kill menu, making accidental kills fewer.
+    - Revive menu, for Shab/professor stuff.
+    - Queued night order. 
+    - Give players deadvotes back.
+    - Removal/Placement of execution mark.
+
+- Townsquare 
+    - Day timer with variable time controls.
+    - Night/Day indicator with the current day displayed. 
+    - Player count(townsfolk,outsider,minion,demon)
+
+- Nominations
+    - Players can nominate, the ST does not have to do it for them.
+        - Done via setting different phases. (Night phase, Day phase, Nomination phase)
+    - Nominations have accusation, defence, pertinence.
+    - Automatic removal of execution mark when vote is tied/beaten.
+    
 
 
 
