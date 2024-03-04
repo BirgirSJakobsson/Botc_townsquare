@@ -6,13 +6,16 @@
 
 <template>
     <h1>Player Array Component</h1>
-    <button @click="addPlayerToList(players)">  Add Player  </button>
-    <!--<button @click="removePlayerFromArray(players)"> Remove Player</button>-->
-    <button @click="printListLength(players)"> Number Of Players </button>
-    <button @click="randomizePlayerPosition(players)"> Mix Players </button>
+    <div>
+        <button @click="addPlayerToList(players)">  Add Player  </button>
+        <button @click="removePlayer()"> Remove Player</button>
+        <button @click="printListLength(players)"> Number Of Players </button>
+        <button @click="randomizePlayerPosition(players)"> Mix Players </button>
+    </div>
+    
     <ul>
-        <li v-for="(player, index) in players">
-           {{ player.id }} {{ player.index }}
+        <li v-for="player in players" :key="player.id">
+            {{ player }}
         </li> 
         <li v-if="players.length===0">No current players</li>
     </ul>
@@ -28,9 +31,13 @@
                 / properties : TODO!
                 / Access via this.players within the scope of this component.
                 */
-                players : []
+                players : [],
+                uniqueKey : 1
             }
         },
+        
+            
+        
         methods: {
             /*
             / Takes the array{players}, adds a new instance of player with uninitialized data
@@ -38,23 +45,21 @@
             */
             addPlayerToList(array){
                 array.push({
-                    id : array.length+1,
+                    id : this.uniqueKey,
                     name:'',
                     role:'',
                     team:''
                 })
-                console.log("Array Length is " + array.length);
-                console.log("Added id is " + array[array.length-1].id);
+                this.uniqueKey++;
             },
-             // Removes the highest index player from the array {players}
             /*
-                Currently need to figure out how to iterate over an array. 
-                I'm struggling to properly delete the highest id value, after 
-                the array has been shuffled.
-
-                TODO!!
-
+            /   Removes the highest indexed player. Basically just pop.
             */
+           removePlayer(){
+            this.players.splice(this.players.length-1, 1);
+           },
+
+
             // Prints the current length of the array {players} to console.log
             printListLength(array){
                 console.log(array.length)
@@ -68,12 +73,14 @@
             */
 
             randomizePlayerPosition(array){
+                temp = this.players;
                 for(var i = array.length-1; i > 0; i--){
                     var j = Math.floor(Math.random()*(i+1));
                     var temp = array[i];
                     array[i] = array[j];
                     array[j] = temp;
                 }
+                return temp;
             }
         }
     }
