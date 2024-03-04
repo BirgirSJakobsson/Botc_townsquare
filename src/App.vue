@@ -2,20 +2,15 @@
 
 
 <template>
-  <controls></controls>
-  <v-header></v-header>
-  <button v-on:click="sendMessage('Hello World')">Send Message</button>
+  <PlayersArray></PlayersArray>
 </template>
 
 <script>
-  
-  import Controls from './components/Controls.vue'
-  import Header from './components/Header.vue'
+  import PlayersArray from './components/PlayersArray.vue';
   export default {
     name : 'App',
     components : {
-      'controls' : Controls,
-      'v-header' : Header,
+      PlayersArray
     },
     data: function(){
       return{
