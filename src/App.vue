@@ -2,11 +2,9 @@
 
 
 <template>
-  <div id="app">
-    <controls></controls>
-    <v-header></v-header>
-    <button v-on:click="sendMessage('Hello World')">Send Message</button>
-  </div>
+  <controls></controls>
+  <v-header></v-header>
+  <button v-on:click="sendMessage('Hello World')">Send Message</button>
 </template>
 
 <script>

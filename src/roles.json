@@ -1,0 +1,16 @@
+[
+    {
+        "id": "placeholder",
+        "name": "placeholder",
+        "edition": "placeholder",
+        "team": "placeholder",
+        "firstNight": "placeholder",
+        "firstNightReminder": "placeholder",
+        "otherNight": "placeholder",
+        "otherNightReminder": "placeholder",
+        "reminders":["place"],
+        "setup": "placeholder",
+        "ability": "placeholder",
+    },
+
+]
