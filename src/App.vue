@@ -1,16 +1,22 @@
-
+<script setup>
+  import PlayersArray from './components/PlayersArray.vue';
+  import Header from './components/Header/Header.vue';
+  import Footer from './components/Footer/Footer.vue';
+</script>
 
 
 <template>
-  <PlayersArray></PlayersArray>
+  <div class="header"><Header/></div>
+  <div class="main"><PlayersArray/></div>
+  <div class="footer"><Footer/></div>
 </template>
 
 <script>
-  import PlayersArray from './components/PlayersArray.vue';
+  
   export default {
     name : 'App',
     components : {
-      PlayersArray
+      
     },
     data: function(){
       return{
