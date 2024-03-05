@@ -18,7 +18,9 @@
         </div>
         <div class="child">
             <img src="https://cdn.pixabay.com/photo/2017/03/05/21/43/mountains-2120004_1280.jpg">
-            <div></div>     
+            <div>
+                
+            </div>     
         </div>
         
         <div class="child">
